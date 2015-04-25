@@ -3,8 +3,35 @@
 <head>
     <meta charset="utf-8">
     <title>EXPRESS JS based application</title>
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- bower:js -->
+    <script src="../../bower_components/underscore/underscore.js"></script>
+    <script src="../../bower_components/backbone/backbone.js"></script>
+    <script src="../../bower_components/knockout/dist/knockout.js"></script>
+    <!-- endbower -->
+    <script type="text/javascript">
+        window.onload = function() {
+            var ViewModel = function(first, last) {
+                this.firstName = ko.observable(first);
+                this.lastName = ko.observable(last);
+
+                this.fullName = ko.pureComputed(function() {
+                    // Knockout tracks dependencies automatically. It knows that fullName depends on firstName and lastName, because these get called when evaluating fullName.
+                    return this.firstName() + " " + this.lastName();
+                }, this);
+            };
+
+            ko.applyBindings(new ViewModel("Planet", "Earth"));
+        };
+    </script>
 </head>
 <body>
 Hello ExpressJS based application!!!
+
+<p>First name: <input data-bind="value: firstName" /></p>
+<p>Last name: <input data-bind="value: lastName" /></p>
+<h2>Hello, <span data-bind="text: fullName"> </span>!</h2>
+
 </body>
 </html>

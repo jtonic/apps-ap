@@ -1,0 +1,24 @@
+{
+  "name": "apps-ap",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jtonic/apps-ap",
+  "authors": [
+    "jtonic <antonel.pazargic@gmail.com>"
+  ],
+  "description": "AP application",
+  "keywords": [
+    "ap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.1.2",
+    "knockout": "~3.3.0"
+  }
+}
