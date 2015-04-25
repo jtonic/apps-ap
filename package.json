@@ -1,0 +1,21 @@
+{
+  "name": "apps-ap",
+  "version": "0.0.1",
+  "description": "AP application",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.12.3",
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.10.0",
+    "gulp-nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "antonel.pazargic@gmail.com",
+  "license": "ISC"
+}
