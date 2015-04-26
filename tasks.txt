@@ -12,3 +12,6 @@ Investigate further:
 - knockout/knockback integration with templating - Handlebars
 - Application AMD/RequireJS modularization
 - ExpressJS routes
+
+Issues:
+- CORS configuration prevents running the REST services using the browser - Chrome

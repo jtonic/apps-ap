@@ -11,6 +11,8 @@ var allowCrossDomain = function(req, res, next) {
         'http://localhost:5000'
     ];
 
+    console.log('Origin: ' + req.headers.origin);
+
     if(allowedHost.indexOf(req.headers.origin) !== -1) {
         res.header('Access-Control-Allow-Credentials', true);
         res.header('Access-Control-Allow-Origin', req.headers.origin);
