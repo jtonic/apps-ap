@@ -7,6 +7,10 @@ $(document).ready(function () {
             this.full_name = ko.computed(function () {
                 return this.first_name() + " " + this.last_name();
             }, this);
+
+            this.register = function() {
+                console.log('Clicked!!!');
+            }
         }
     });
 
