@@ -1,13 +1,15 @@
-$(document).ready(function() {
-    var ViewModel = function(first, last) {
-        this.firstName = ko.observable(first);
-        this.lastName = ko.observable(last);
+$(document).ready(function () {
+    var model = new Backbone.Model({first_name: "Antonel", last_name: "Pazargic"});
 
-        this.fullName = ko.pureComputed(function() {
-            // Knockout tracks dependencies automatically. It knows that fullName depends on firstName and lastName, because these get called when evaluating fullName.
-            return this.firstName() + " " + this.lastName();
-        }, this);
-    };
+    var ContactViewModel = kb.ViewModel.extend({
+        constructor: function (model) {
+            kb.ViewModel.prototype.constructor.call(this, model);
+            this.full_name = ko.computed(function () {
+                return this.first_name() + " " + this.last_name();
+            }, this);
+        }
+    });
 
-    ko.applyBindings(new ViewModel("Antonel", "Pazargic"));
+    var view_model = new ContactViewModel(model);
+    kb.applyBindings(view_model, $('#databingind')[0]);
 });

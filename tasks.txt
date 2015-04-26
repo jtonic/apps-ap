@@ -1,5 +1,5 @@
 Tasks list:
-- Backbone integration and simple example
-- Backbone and Knockout example
+- [V] Backbone integration and simple example - using knockback
+- [V] Backbone and Knockout example - using knockback
 - Backbone model server by rest services
 - Nicer web pages with twitter bootstrap
