@@ -4,11 +4,9 @@ var express = require('express');
 var app = express();
 var router = express.Router();
 
+app.use(express.static(__dirname + '/public'));
+app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 app.get('/', function (req, res) {
-    var option = {
-        root: __dirname + '/public/'
-    };
-
     res.sendFile('index.html', option, function (err) {
         if(err) {
             console.log(err);
