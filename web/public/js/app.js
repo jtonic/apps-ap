@@ -27,7 +27,7 @@ $(document).ready(function () {
             this.full_name = ko.computed(function () {
                 return this.first_name() + " " + this.last_name();
             }, this);
-            this.register = function() {
+            this.info = function() {
                 entity.fetch(
                     {
                         success: function () {
@@ -40,7 +40,7 @@ $(document).ready(function () {
                     });
                 console.log(JSON.stringify(entity));
             };
-            this.info = function() {
+            this.register = function() {
                 entity.save(
                     {
                         success: function () {
