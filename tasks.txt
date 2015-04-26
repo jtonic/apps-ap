@@ -1,5 +1,10 @@
 Tasks list:
 - [V] Backbone integration and simple example - using knockback
 - [V] Backbone and Knockout example - using knockback
-- [>] Backbone model server by rest services
+- [V] Backbone model server by rest services
+    GET
+    POST
 - [V] Nice web pages with twitter bootstrap
+
+- Use coffeeScript for model
+

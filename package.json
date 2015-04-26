@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
+    "body-parser": "^1.12.3",
     "express": "^4.12.3",
     "gulp": "^3.8.11",
     "gulp-jshint": "^1.10.0",
