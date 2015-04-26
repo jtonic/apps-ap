@@ -8,3 +8,7 @@ Tasks list:
 
 - Use coffeeScript for model
 
+Investigate further:
+- knockout/knockback integration with templating - Handlebars
+- Application AMD/RequireJS modularization
+- ExpressJS routes
