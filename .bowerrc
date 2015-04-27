@@ -1,4 +1,7 @@
 {
   "directory": "./web/public/bower_components/",
-  "timeout": 120000
+  "timeout": 120000,
+  "proxy": "http://$username:$pass@host:port",
+  "https-proxy": "http://$username:$pass@host:port",
+  "strict-ssl": false
 }
