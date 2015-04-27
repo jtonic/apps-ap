@@ -58,6 +58,7 @@ What I would like to integrate further is:
     Mustache - as templating engine for integrating with knockout
     CoffeeScript - for Javascript object orientation
     Compass/SAAS - for simplification of the CSS
+    MongoDb storage for a easy implememtation of the REST CRUD services
 
 Notes:
     REST services could be provided by java JAX-RS support in WL - JERSEY
