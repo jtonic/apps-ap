@@ -5,13 +5,12 @@ Tasks list:
     GET
     POST
 - [V] Nice web pages with twitter bootstrap
-
-- Use coffeeScript for model
+- [V] Use coffeeScript for JS simplification and OOP support
+- [V] ExpressJS routes
+- Enable the AMD/RequireJS/CommonJS for modularization
 
 Investigate further:
 - knockout/knockback integration with templating - Handlebars
-- Application AMD/RequireJS modularization
-- ExpressJS routes
 
 Issues:
 - CORS configuration prevents running the REST services using the browser - Chrome
